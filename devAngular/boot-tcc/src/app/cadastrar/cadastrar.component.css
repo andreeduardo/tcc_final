@@ -1,0 +1,22 @@
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.example-selected-value {
+  margin: 15px 0;
+}
+
+.card {
+  width: 400px;
+}
+.card-content{
+  border-top: 1px solid #9e9e9e;
+}
+.material-icons{
+  margin-top: 15px;
+}

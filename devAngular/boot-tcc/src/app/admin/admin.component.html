@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col s1"></div>
+
+    <ul class="collection col s10">
+      <li class="collection-item center"><h4>Lista de pendências</h4></li>
+      <li class="collection-item avatar" *ngFor="let questoes of arrQuestoes;">
+        <ng-container *ngIf="questoes.resposta == null; else questaoNormal"> 
+            <p>
+              <label>
+                <input type="checkbox" [(ngModel)]='questoes.checkEstudante'/>
+                <span>Incluir na base do Estudante</span>
+              </label> &nbsp;
+              <label>
+                <input type="checkbox" [(ngModel)]='questoes.checkResponsavel'/>
+                <span>Incluir na base do Responsável</span>
+              </label>
+            </p>
+          <b class="tamanho-padrao">Assunto: </b>
+          <div class="input-field inline tamanho-padrao" >
+            <input id="pergunta_inline" type="text" class="validate tamanho-padrao" [(ngModel)]='questoes.pergunta'>
+            <label class="active tamanho-padrao" for="pergunta_inline" ></label>
+          </div>
+          <br>
+          <b>Resposta: </b>
+          <div class="input-field inline tamanho-padrao">
+            <input id="novo_inline" type="text" class="validate tamanho-padrao" [(ngModel)]='questoes.novo'>
+            <label class="active tamanho-padrao" for="novo_inline"></label>
+          </div>        
+        </ng-container>    
+        <ng-template #questaoNormal>
+          <p>
+            <label>
+              <input type="checkbox" [(ngModel)]='questoes.checkEstudante'/>
+              <span>Incluir na base do Estudante</span>
+            </label> &nbsp;
+            <label>
+              <input type="checkbox" [(ngModel)]='questoes.checkResponsavel'/>
+              <span>Incluir na base do Responsável</span>
+            </label>
+          </p>
+          <span class="tamanho-padrao"><b>Assunto:</b> {{questoes.resposta}}</span>
+          <br>
+          <b class="tamanho-padrao">Tema: </b>
+          <div class="input-field inline tamanho-padrao">
+            <input id="pergunta_normal_inline" type="text" class="validate tamanho-padrao" [(ngModel)]='questoes.pergunta'>
+            <label class="active tamanho-padrao" for="pergunta_normal_inline"></label>
+          </div>
+        </ng-template>
+        
+        <a class="secondary-content">
+          <i *ngIf="questoes.resposta !== null" class="small material-icons tooltip" style="cursor: Pointer" id=`adiciona_{{questoes.id}}` (click)='adiciona(questoes.id, questoes.resposta, questoes.pergunta, questoes.checkEstudante, questoes.checkResponsavel)'>check_circle</i>
+          <i *ngIf="questoes.resposta == null" class="small material-icons" style="cursor: Pointer" id=`insere_{{questoes.id}}` (click)='insere(questoes.id, questoes.pergunta, questoes.novo, questoes.checkEstudante, questoes.checkResponsavel)' >add_circle_outline</i>
+          <i class="small material-icons" style="cursor: Pointer" id=`remove_{{questoes.id}}` (click)='remove(questoes.id)' >highlight_off</i>
+        </a>
+      </li>
+    </ul>
+  
+
+  <div class="col s1"></div>
+</div>

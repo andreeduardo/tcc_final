@@ -1,0 +1,42 @@
+<div class="card-panel yellow lighten-4 yellow-text text-darken-4" *ngIf="exceptionMessage"><b>Atenção!</b> {{exceptionMessage}}</div>
+<body class="light-green lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m3">
+                <form class="login-form">
+                    <div class="card">
+                        <div class="card-image center">
+                            <i class="large material-icons">adb</i>
+                        </div>
+                        <span class="card-title center">
+                            <h2>Login</h2>
+                        </span>
+                        <div class="card-content">
+                            <div class="input-field">
+                                <input [(ngModel)]="username" placeholder="Usuário" (keyup.enter)="login()" name="username" required>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m12">
+                                    <div class="input-field">
+                                        <input [(ngModel)]="password" placeholder="Senha" (keyup.enter)="login()" type="password" name="Senha" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action blue-grey lighten-3">
+                            <div class="center-align">
+                                <a (click)="login()" class="btn">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col 12">
+                        Não possui conta? <a (click)="cadastrar()" style="cursor: Pointer">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<router-outlet></router-outlet>

@@ -1,0 +1,295 @@
+<aiml>
+
+	<category>
+		<pattern>*TUDO BEM*</pattern>
+		<template>
+			<random>
+				<li>Tudo em ordem :D, no que posso ser util hoje?</li>
+				<li>Muito bem, obrigado :D, no que posso ser util hoje?</li>
+				<li>Eu estou bem :D, no que posso ser util hoje?</li> 
+				<li>Estou sim :D, no que posso ser util hoje?</li>
+				<li>Tudo legal :D, no que posso ser util hoje?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NOTA</pattern>
+		<template>
+		Para você conferir as suas notas e as suas médias, acesse a opção "Notas e Frequências" (à esquerda). Caso você queira conferir suas Notas Parciais em uma disciplina, você pode clicar em cima da média da disciplina desejada. Se a sua média não estiver disponível, você pode clicar em cima da sigla NP.
+		</template>
+	</category>
+
+   <category>
+      <pattern>*NOTA*</pattern>
+      <template>
+         <srai>NOTA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*N.P.*</pattern>
+      <template>
+         <srai>NOTA PARCIAL</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>BOLETO</pattern>
+		<template>
+		Para você conferir os boletos que estão em seu nome, acesse a opção "Financeiro" (à esquerda). Você irá visualizar os boletos do ano corrente (pendentes e pagos) de um determinado dependente. Você pode imprimir ou baixar um determinado boleto. Para tanto selecione o dependente, clique em cima do valor do boleto ou da opção Pagar. Você também tem a opção de visualizar os boletos de anos anteriores ou todos os boletos pendentes. Para tanto selecione o ano e o dependente desejado.
+		</template>
+	</category> 
+
+   <category>
+      <pattern>*BOLETO*</pattern>
+      <template>
+         <srai>BOLETO</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>MEDIA</pattern>
+		<template>
+		    Você quer saber sobre Média Trimestral Parcial (M.T.P.), Média Trimestral Definitiva (M.T.D.), Média Anual ou Média Final?
+		</template>
+	</category>
+
+   <category>
+      <pattern>*MEDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MÉDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>MEDIA TRIMESTRAL PARCIAL</pattern>
+		<template>
+		   A Média Trimestral Parcial (M.T.P.) é a média em uma disciplina antes da recuperação trimestral. 
+		</template>
+	</category>
+
+   <category>
+      <pattern>*MTP*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*M.T.P.*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*M.T.P*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MEDIA TRIMESTRAL PARCIAL*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL PARCIAL</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>MEDIA TRIMESTRAL DEFINITIVA</pattern>
+		<template>
+		   A Média Trimestral Definitiva (M.T.D.) é a média em uma disciplina após a recuperação trimestral, ou seja, essa é a média no trimestre. 
+		</template>
+	</category>
+
+   <category>
+      <pattern>*MEDIA TRIMESTRAL DEFINITIVA*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL DEFINITIVA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MTD*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL DEFINITIVA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*M.T.D.*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL DEFINITIVA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*M.T.D*</pattern>
+      <template>
+         <srai>MEDIA TRIMESTRAL DEFINITIVA</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>MEDIA ANUAL</pattern>
+		<template>
+		   A Média Anual é obtida pela média aritmética das notas dos três trimestres em uma disciplina (fórmula = (nota 1º trimestre + nota 2º trimestre + nota 3º trimestre) / 3). 
+		</template>
+	</category>
+
+   <category>
+      <pattern>*MEDIA ANUAL*</pattern>
+      <template>
+         <srai>MEDIA ANUAL</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>MEDIA FINAL</pattern>
+		<template>
+		   Caso a Média Anual seja inferior a 7,0 (sete), você deverá fazer uma prova final (Exame) envolvendo  conteúdo do ano inteiro. A Média Final é obtida pela média ponderada da Média Anual com peso 7 (sete) com a nota do Exame com peso 3 (três) (fórmula = (Média Anual * 7 + nota do Exame * 3) / 10).  
+		</template>
+	</category>
+
+   <category>
+      <pattern>*MEDIA FINAL*</pattern>
+      <template>
+         <srai>MEDIA FINAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*EXAME*</pattern>
+      <template>
+         <srai>MEDIA FINAL</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>RECUPERACAO</pattern>
+		<template>
+		   A recuperação trimestral (REC) é a nota que você obteve na atividade de recuperação de uma disciplina em um trimestre. Pode ser uma atividade no AVA que acrescenta pontos na média, pode ser uma prova cuja nota substituirá a menor nota entre as provas do trimestre, entre outras atividades possíveis, dependendo do ano em que você está matriculado.
+		</template>
+	</category>
+
+   <category>
+      <pattern>*RECUPERACAO*</pattern>
+      <template>
+         <srai>RECUPERACAO</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*REC*</pattern>
+      <template>
+         <srai>RECUPERACAO</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>FREQUENCIA</pattern>
+		<template>
+		    Para você conferir a sua frequência, acesse a opção "Notas e Frequências" (à esquerda). Caso você queira conferir sua Frequência Parcial em uma disciplina, você pode clicar em cima da quantidade de faltas da disciplina desejada. Se a quantidade de faltas não estiver disponível, você pode clicar em cima da sigla FP.
+		</template>
+	</category>
+
+   <category>
+      <pattern>*FREQUENCIA*</pattern>
+      <template>
+         <srai>FREQUENCIA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*FREQ*</pattern>
+      <template>
+         <srai>FREQUENCIA</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>FALTA PARCIAL</pattern>
+		<template>
+		    Faltas (F.P.) indicam quantas faltas você teve em uma disciplina em um trimestre. Para conferir quais as aulas e quais as faltas que você teve em uma disciplina em um trimestre, você pode clicar em cima das suas faltas ou em cima da sigla FP. As informações serão apresentadas em outra janela, contendo, para cada aula, a data, a sigla da disciplina, a quantidade de aulas (QA), o conteúdo programático(CP) e a situação (S), podendo ser presença (C) ou ausência (F). Também é possível verificar: a quantidade de aulas no trimestre e no ano (QAE e QAA), a quantidade de faltas no trimestre e no ano (QFE e QFA), bem com o percentual de frequência anual (PFA).
+		</template>
+	</category>
+
+   <category>
+      <pattern>*FALTA PARCIAL*</pattern>
+      <template>
+         <srai>FALTA PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*FP*</pattern>
+      <template>
+         <srai>FALTA PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*F.P.*</pattern>
+      <template>
+         <srai>FALTA PARCIAL</srai>
+      </template>
+   </category>
+
+	<category>
+		<pattern>NOTA PARCIAL</pattern>
+		<template>
+		    As Notas Parciais (N.P.) são as notas que você obteve em cada atividade realizada em uma disciplina durante o 
+          trimestre. Caso você queira conferir suas Notas Parciais em uma disciplina, você pode clicar em cima da média, 
+          se estiver disponível, ou em cima da sigla NP, caso contrário. As informações serão apresentadas em outra janela, 
+          contendo, para cada avaliação, a data, o tipo (prova, trabalho, recuperação, outra), o assunto e a nota obtida. 
+          Se já estiver disponível, você poderá conferir também a fórmula (FM) utilizada para calcular a média trimestral, 
+          a média na disciplina (MP) e a média após a recuperação (MX).
+		</template>
+	</category>
+
+   <category>
+      <pattern>*NOTA PARCIAL*</pattern>
+      <template>
+         <srai>NOTA PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*NP*</pattern>
+      <template>
+         <srai>NOTA PARCIAL</srai>
+      </template>
+   </category>
+
+
+    <category>
+        <pattern>CADEIRA</pattern>
+            <template>
+            A cadeira é um móvel
+            </template>
+    </category>
+
+    <category>
+        <pattern>*CADEIRA*</pattern>
+        <template>
+            <srai>CADEIRA</srai>
+        </template>
+    </category>
+	
+    <category>
+    <pattern>*AVALIAÇÕES*</pattern>
+    <template>
+    <srai>NOTAS</srai>
+    </template>
+    </category>
+    
+    </aiml>

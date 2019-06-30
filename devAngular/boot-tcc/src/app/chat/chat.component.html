@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col s1"></div>
+  <div class="col s2">
+    <div class="card-panel ">
+      <div class="card-image" style="text-align: center;">
+        <span class="card-title">Duca</span><br>
+        <i class="large material-icons">adb</i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col s6">
+    <div class="historicoMensagens" id="historicoMensagens">
+      <div *ngFor="let msg of arrMensagens">
+        <div class="message" [ngClass]="{ 
+                                          'from': msg.origem === 'chat',
+                                          'to': msg.origem === 'user' 
+                                        }">
+            {{ msg.retorno }}
+        </div>
+      </div>
+    </div>
+    <div class="envio">
+        <input style="width: 75%; margin-left: 10px;"
+          #msg 
+          [(ngModel)]="mensagem"
+          placeholder="Digite aqui" 
+          type="text" 
+          required
+          (keyup.enter)="enviarMensagem(msg.value)"
+        >
+        <a style="margin-left: 15px;" id="btnEnviar" class="waves-effect waves-light btn" (click)="enviarMensagem(msg.value)">Enviar <i class="material-icons right">send</i></a>
+      </div>
+  </div>
+  <div class="col s2">
+    <div class="card-panel ">
+      <div class="card-image" style="text-align: center;">
+        <span class="card-title">{{nomeUsuario.nome}}</span><br>
+        <i class="large material-icons">face</i>
+      </div>
+    </div>
+    <div class="col s1"></div>
+  </div>
+</div>

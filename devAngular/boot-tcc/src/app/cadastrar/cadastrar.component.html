@@ -1,0 +1,51 @@
+<div class="card-panel yellow lighten-4 yellow-text text-darken-4" *ngIf="exceptionMessage"><b>Atenção!</b> {{exceptionMessage}}</div>
+<div class="card-panel green lighten-4 yellow-text text-darken-4" *ngIf="sucessMessage"><b>Atenção!</b> {{sucessMessage}}</div>
+
+<body class="light-green lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m3">
+                <form class="login-form">
+                    <div class="card">
+                        <div class="card-image center">
+                            <i class="large material-icons">adb</i>
+                        </div>
+                        <span class="card-title center">
+                            <h4>Cadastro de usuário</h4>
+                        </span>
+                        <div class="card-content">
+                            <div class="input-field">
+                              <input [(ngModel)]="name" placeholder="Nome" (keyup.enter)="cadastrar()" name="name" required />
+                            </div>
+                            <div class="row">
+                              <div class="col s12 m12">
+                                <div class="input-field">
+                                  <input [(ngModel)]="username" placeholder="Usuário" (keyup.enter)="cadastrar()" name="username" required />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col s12 m12">
+                                <div class="input-field">
+                                  <input [(ngModel)]="password" placeholder="Senha" (keyup.enter)="cadastrar()" name="password" type="password" required />
+                                </div>
+                              </div>
+                            </div>
+                            <mat-radio-group [(ngModel)]="papelsel" class="example-radio-group" name="rgPapel">
+                              <mat-radio-button class="example-radio-button" *ngFor="let papel of arrPapeis" name="rbPapel" [value]="papel">
+                                {{papel}}
+                              </mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="card-action blue-grey lighten-3">
+                            <div class="center-align">
+                                <a (click)="cadastrar()" class="btn">Cadastrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<router-outlet></router-outlet>

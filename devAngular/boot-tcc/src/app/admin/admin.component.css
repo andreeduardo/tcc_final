@@ -1,0 +1,24 @@
+img.editar { cursor: pointer; }
+.input-field {
+    position: relative;
+    margin-top: 0rem; 
+    margin-bottom: 0rem;
+    width: 85%;
+}
+#pergunta_inline {
+    width: 100%;
+    margin-top: -2rem; 
+    margin-left: 10px;
+}
+#resposta_inline {
+    width: 100%;
+    margin-top: -2rem; 
+    margin-left: 10px;
+}
+#novo_inline {
+    width: 100%;
+    margin-top: -2rem; 
+}
+.tamanho-padrao {
+    font-size: 15px;
+}

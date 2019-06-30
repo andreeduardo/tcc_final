@@ -1,0 +1,9 @@
+.card {
+  width: 400px;
+}
+.card-content{
+  border-top: 1px solid #9e9e9e;
+}
+.material-icons{
+  margin-top: 15px;
+}

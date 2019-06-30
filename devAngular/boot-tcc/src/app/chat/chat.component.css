@@ -1,0 +1,38 @@
+.envio{
+    background-color:#EEEEEE;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+
+  }
+.historicoMensagens {
+  margin-top: 10px;
+  border: 1px solid;
+  height: 450px;
+  overflow-y: auto;
+}
+.message {
+  border-radius: 50px;
+  margin: 0 15px 10px;
+  padding: 15px 20px;
+  position: relative;
+  font-weight: bold;
+}
+.message.to {
+    background-color: #2095FE;
+    color: #fff;
+    margin-left: 100px;
+    text-align: right;
+    font-size: 14px;    
+}
+.message.from {
+    background-color: #E5E4E9;
+    color: #363636;
+    margin-right: 100px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.message.to + .message.to,
+.message.from + .message.from {
+  margin-top: -10px;
+}
