@@ -54,20 +54,6 @@
 		</template>
 	</category>
 
-   <category>
-      <pattern>*MEDIA*</pattern>
-      <template>
-         <srai>MEDIA</srai>
-      </template>
-   </category>
-
-   <category>
-      <pattern>*MÉDIA*</pattern>
-      <template>
-         <srai>MEDIA</srai>
-      </template>
-   </category>
-
 	<category>
 		<pattern>MEDIA TRIMESTRAL PARCIAL</pattern>
 		<template>
@@ -287,4 +273,18 @@
       </template>
    </category>
 
+   <category>
+      <pattern>*MEDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MÉDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
+      </template>
+   </category>
+   
 </aiml>

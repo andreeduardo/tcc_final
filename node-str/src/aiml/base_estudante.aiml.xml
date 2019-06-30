@@ -52,20 +52,6 @@
 		</template>
 	</category>
 
-   <category>
-      <pattern>*MEDIA*</pattern>
-      <template>
-         <srai>MEDIA</srai>
-      </template>
-   </category>
-
-   <category>
-      <pattern>*MÉDIA*</pattern>
-      <template>
-         <srai>MEDIA</srai>
-      </template>
-   </category>
-
 	<category>
 		<pattern>MEDIA TRIMESTRAL PARCIAL</pattern>
 		<template>
@@ -266,6 +252,20 @@
       <pattern>*N.P.*</pattern>
       <template>
          <srai>NOTA PARCIAL</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MEDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>*MÉDIA*</pattern>
+      <template>
+         <srai>MEDIA</srai>
       </template>
    </category>
 

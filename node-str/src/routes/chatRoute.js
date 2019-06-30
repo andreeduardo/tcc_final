@@ -60,7 +60,7 @@ const create = router.post('/', (req, res, next) => {
                     console.log('Erro na Query');
                 }
                 else {
-            aimlInterpreter.loadAIMLFilesIntoArray(['../node-str/src/aiml/base_estudante.aiml.xml']);
+                    aimlInterpreter.loadAIMLFilesIntoArray(['../node-str/src/aiml/base_estudante.aiml.xml']);
                     res.json({resposta: "Iremos analisar sua sugestão e, talvez, incluiremos em nossa base de conhecimento :D. Obrigada pela colaboração.", status: "ok"});
                 }
             });
@@ -103,7 +103,6 @@ const create = router.post('/', (req, res, next) => {
                 res.json({resposta: aimlInterpreter.findAnswerInLoadedAIMLFiles(req.body.pergunta.toUpperCase(), callback), status: "ok"});
             }            
         }
-
     }
 
 });
