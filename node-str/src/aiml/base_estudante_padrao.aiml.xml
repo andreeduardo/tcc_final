@@ -30,11 +30,7 @@
 	<category>
 		<pattern>BOLETO</pattern>
 		<template>
-		Para você conferir os boletos que estão em seu nome, acesse a opção "Financeiro" (à esquerda). 
-      Você irá visualizar os boletos do ano corrente (pendentes e pagos) de um determinado dependente. 
-      Você pode imprimir ou baixar um determinado boleto. Para tanto selecione o dependente, clique em cima do valor do 
-      boleto ou da opção Pagar. Você também tem a opção de visualizar os boletos de anos anteriores ou todos os boletos 
-      pendentes. Para tanto selecione o ano e o dependente desejado.
+		Para você conferir os boletos que estão em seu nome, acesse a opção "Financeiro" (à esquerda). Você irá visualizar os boletos do ano corrente (pendentes e pagos) de um determinado dependente. Você pode imprimir ou baixar um determinado boleto. Para tanto selecione o dependente, clique em cima do valor do boleto ou da opção Pagar. Você também tem a opção de visualizar os boletos de anos anteriores ou todos os boletos pendentes. Para tanto selecione o ano e o dependente desejado.
 		</template>
 	</category> 
 

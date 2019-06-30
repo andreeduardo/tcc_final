@@ -16,7 +16,9 @@
 	<category>
 		<pattern>NOTA</pattern>
 		<template>
-		Para você conferir as suas notas e as suas médias, acesse a opção "Notas e Frequências" (à esquerda). Caso você queira conferir suas Notas Parciais em uma disciplina, você pode clicar em cima da média da disciplina desejada. Se a sua média não estiver disponível, você pode clicar em cima da sigla NP.
+		Para você conferir as notas e as médias de seu dependente, acesse a opção "Notas e Frequências" (à esquerda). 
+      Caso você queira conferir as Notas Parciais em uma disciplina, você pode clicar em cima da média da disciplina 
+      desejada. Se a média não estiver disponível, você pode clicar em cima da sigla NP.
 		</template>
 	</category>
 
@@ -32,9 +34,9 @@
 		<template>
 		Para você conferir os boletos que estão em seu nome, acesse a opção "Financeiro" (à esquerda). 
       Você irá visualizar os boletos do ano corrente (pendentes e pagos) de um determinado dependente. 
-      Você pode imprimir ou baixar um determinado boleto. Para tanto selecione o dependente, clique em cima do valor do 
-      boleto ou da opção Pagar. Você também tem a opção de visualizar os boletos de anos anteriores ou todos os boletos 
-      pendentes. Para tanto selecione o ano e o dependente desejado.
+      Você pode imprimir ou baixar um determinado boleto. Para tanto, selecione o dependente, 
+      clique em cima do valor do boleto ou da opção Pagar. Você também tem a opção de visualizar os boletos de anos 
+      anteriores ou todos os boletos pendentes. Para tanto selecione o ano e o dependente desejado.
 		</template>
 	</category> 
 
@@ -153,7 +155,9 @@
 	<category>
 		<pattern>MEDIA FINAL</pattern>
 		<template>
-		   Caso a Média Anual seja inferior a 7,0 (sete), você deverá fazer uma prova final (Exame) envolvendo  conteúdo do ano inteiro. A Média Final é obtida pela média ponderada da Média Anual com peso 7 (sete) com a nota do Exame com peso 3 (três) (fórmula = (Média Anual * 7 + nota do Exame * 3) / 10).  
+		   Caso a Média Anual seja inferior a 7,0 (sete), você deverá fazer uma prova final (Exame) 
+         envolvendo conteúdo do ano inteiro. A Média Final é obtida pela média ponderada da Média Anual com peso 7 (sete) 
+         com a nota do Exame com peso 3 (três) (fórmula = (Média Anual * 7 + nota do Exame * 3) / 10).  
 		</template>
 	</category>
 
@@ -195,7 +199,10 @@
 	<category>
 		<pattern>FREQUENCIA</pattern>
 		<template>
-		    Para você conferir a sua frequência, acesse a opção "Notas e Frequências" (à esquerda). Caso você queira conferir sua Frequência Parcial em uma disciplina, você pode clicar em cima da quantidade de faltas da disciplina desejada. Se a quantidade de faltas não estiver disponível, você pode clicar em cima da sigla FP.
+		    Para você conferir a frequência de seu dependente, acesse a opção "Notas e Frequências" (à esquerda). 
+          Caso você queira conferir a Frequência Parcial em uma disciplina, você pode clicar em cima da quantidade de 
+          faltas da disciplina desejada. Se a quantidade de faltas não estiver disponível, você pode clicar em cima da sigla 
+          FP.
 		</template>
 	</category>
 
@@ -216,7 +223,13 @@
 	<category>
 		<pattern>FALTA PARCIAL</pattern>
 		<template>
-		    Faltas (F.P.) indicam quantas faltas você teve em uma disciplina em um trimestre. Para conferir quais as aulas e quais as faltas que você teve em uma disciplina em um trimestre, você pode clicar em cima das suas faltas ou em cima da sigla FP. As informações serão apresentadas em outra janela, contendo, para cada aula, a data, a sigla da disciplina, a quantidade de aulas (QA), o conteúdo programático(CP) e a situação (S), podendo ser presença (C) ou ausência (F). Também é possível verificar: a quantidade de aulas no trimestre e no ano (QAE e QAA), a quantidade de faltas no trimestre e no ano (QFE e QFA), bem com o percentual de frequência anual (PFA).
+		    Faltas (F.P.) indicam quantas faltas seu dependente teve em uma disciplina em um trimestre. 
+          Para conferir quais as aulas e quais as faltas que ele teve em uma disciplina em um trimestre, 
+          você pode clicar em cima das suas faltas ou em cima da sigla FP. As informações serão apresentadas em outra 
+          janela, contendo, para cada aula, a data, a sigla da disciplina, a quantidade de aulas (QA), o conteúdo 
+          programático(CP) e a situação (S), podendo ser presença (C) ou ausência (F). Também é possível verificar: 
+          a quantidade de aulas no trimestre e no ano (QAE e QAA), a quantidade de faltas no trimestre e no ano (QFE e QFA), 
+          bem com o percentual de frequência anual (PFA).
 		</template>
 	</category>
 
@@ -244,7 +257,12 @@
 	<category>
 		<pattern>NOTA PARCIAL</pattern>
 		<template>
-		    As Notas Parciais (N.P.) são as notas que você obteve em cada atividade realizada em uma disciplina durante o trimestre. Caso você queira conferir suas Notas Parciais em uma disciplina, você pode clicar em cima da média, se estiver disponível, ou em cima da sigla NP, caso contrário. As informações serão apresentadas em outra janela, contendo, para cada avaliação, a data, o tipo (prova, trabalho, recuperação, outra), o assunto e a nota obtida. Se já estiver disponível, você poderá conferir também a fórmula (FM) utilizada para calcular a média trimestral, a média na disciplina (MP) e a média após a recuperação (MX).
+		    As Notas Parciais (N.P.) são as notas que seu dependente obteve em cada atividade realizada em uma disciplina durante o 
+          trimestre. Caso você queira conferir as Notas Parciais de uma disciplina, você pode clicar em cima da média, 
+          se estiver disponível, ou em cima da sigla NP, caso contrário. As informações serão apresentadas em outra janela, 
+          contendo, para cada avaliação, a data, o tipo (prova, trabalho, recuperação, outra), o assunto e a nota obtida. 
+          Se já estiver disponível, você poderá conferir também a fórmula (FM) utilizada para calcular a média trimestral, 
+          a média na disciplina (MP) e a média após a recuperação (MX).
 		</template>
 	</category>
 
