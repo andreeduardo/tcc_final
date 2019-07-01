@@ -11,7 +11,6 @@ const chatRoute = require('./routes/chatRoute');
 const cadastrarRoute = require('./routes/cadastrarRoute');
 const loginRoute = require('./routes/loginRoute');
 const adminRoute = require('./routes/adminRoute');
-const adminListaRoute = require('./routes/adminListaRoute');
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*")
@@ -28,6 +27,5 @@ app.use('/chat', chatRoute);
 app.use('/cadastrar', cadastrarRoute);
 app.use('/login', loginRoute);
 app.use('/admin', adminRoute);
-app.use('/admin-lista', adminListaRoute);
 
 module.exports = app;

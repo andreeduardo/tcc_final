@@ -18,8 +18,8 @@ var conexao = mysql.createConnection({
     database : 'bd_boot'
 });
 
-const route = router.get('/', (req, res, next) => {   
-    conexao.query('select * from questoes_validar where sn_avaliado = 0;', 
+const route = router.get('/', (req, res, next) => {
+    conexao.query('select * from questoes_validar where sn_avaliado = 0;',
     function(err, rows, fields) {
         if (!!err) {
             console.log('Erro na Query');
@@ -28,7 +28,7 @@ const route = router.get('/', (req, res, next) => {
             if (rows.length > 0) {
                 res.status(200).send({
                     rows
-                });   
+                });
             }
         }
     });
@@ -56,7 +56,7 @@ function escreveEstudante(pergunta, novo) {
         fs.readFile(caminhoEstudante, function(err, buf) {
             var conteudoArquivo = buf.toString();
             conteudoArquivo = conteudoArquivo.replace('</aiml>', conteudo);
-            console.log('Arquivo lido!');  
+            console.log('Arquivo lido!');
             new Promise((resolve, reject) => {
                 fs.unlink(caminhoEstudante, function (err) {
                     if (err) throw err;
@@ -70,7 +70,7 @@ function escreveEstudante(pergunta, novo) {
                     console.log('Arquivo salvo!');
                     aimlInterpreter.loadAIMLFilesIntoArray([caminhoEstudante]);
                     console.log('Arquivo carregado!');
-                }); 
+                });
                 resolve();
             });
         });
@@ -106,7 +106,7 @@ function escreveResponsavel(pergunta, novo) {
                 fs.unlink(caminhoResponsavel, function (err) {
                     if (err) throw err;
                     console.log('Arquivo do resp deletado!');
-                });              
+                });
                 resolve();
             });
             new Promise((resolve, reject) => {
@@ -118,20 +118,20 @@ function escreveResponsavel(pergunta, novo) {
                 });
                 resolve();
             });
-        });         
+        });
         resolve();
     });
 }
 
 function escreveEstudanteLink(pergunta, resposta) {
-    var conteudoLink = `	
+    var conteudoLink = `
     <category>
     <pattern>*`+pergunta.toUpperCase()+`*</pattern>
     <template>
     <srai>`+resposta.toUpperCase()+`</srai>
     </template>
     </category>
-    
+
     </aiml>`
     ;
 
@@ -145,7 +145,7 @@ function escreveEstudanteLink(pergunta, resposta) {
                 fs.unlink(caminhoEstudante, function (err) {
                     if (err) throw err;
                     console.log('Arquivo deletado!');
-                });         
+                });
                 resolve();
             });
             new Promise((resolve, reject) => {
@@ -154,7 +154,7 @@ function escreveEstudanteLink(pergunta, resposta) {
                     console.log('Arquivo salvo!');
                     aimlInterpreter.loadAIMLFilesIntoArray([caminhoEstudante]);
                     console.log('Arquivo carregado!');
-                });         
+                });
                 resolve();
             });
         });
@@ -164,7 +164,7 @@ function escreveEstudanteLink(pergunta, resposta) {
 
 function escreveResponsavelLink(pergunta, resposta) {
 
-    var conteudoLink = `	
+    var conteudoLink = `
     <category>
     <pattern>*`+pergunta.toUpperCase()+`*</pattern>
     <template>
@@ -206,7 +206,7 @@ function escreveResponsavelLink(pergunta, resposta) {
 const route1 = router.put('/', (req, res, next) => {
     if (req.body.novo !== undefined) {
         // altera o arquivo da base AIML
-       
+
         if (req.body.insereEstudante == true && req.body.insereResponsavel == true) {
             escreveEstudante(req.body.pergunta, req.body.novo).then(
                 () => {
@@ -240,12 +240,12 @@ const route1 = router.put('/', (req, res, next) => {
         }
     }
 
-    conexao.query('update questoes_validar set sn_avaliado = 1 where id = ' + req.body.id + ';', 
+    conexao.query('update questoes_validar set sn_avaliado = 1 where id = ' + req.body.id + ';',
     function(err, rows, fields) {
         if (!!err) {
-            console.log('Erro na Query');
+            throw err;
         } else {
-            res.status(200).send({});   
+            res.status(200).send({});
         }
     });
 });
